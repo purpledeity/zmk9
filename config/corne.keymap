@@ -22,9 +22,9 @@
 #define TRI 3 // Function & Bluetooth & Multimedia & Extra Layer
 #define GAME 4 // Default qwerty 
 #define NUMB 5 // Numpad layer 
-#define BRUSH 6 // Depreaciated layer for Fire Apalca 
-#define SONE 7 // Mouse emulator 
-#define STWO 8 // Depreciated Layer
+#define BRUSH 6 // Depreaciated layer for F
+#define SONE 7
+#define STWO 8
 
 &mt {
 };   
