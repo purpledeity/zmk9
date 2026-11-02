@@ -29,28 +29,6 @@
 &mt {
 };   
 
-&mmv { // Settings for mouse 
-    acceleration-exponent = <1>;      // 1
-    time-to-max-speed-ms = <500>;     // 300
-    delay-ms = <0>;                   // 0
-};
-&mmv_input_listener { 
-	compatible = "zmk,input-listener";
-	scale-multiplier = <2>;
-	device = <&mmv>;
-};
-
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <40>;      // 300
-    delay-ms = <0>;                   // 0
-};
-
-&key_repeat { 
-    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
-};
-
-
 / {
         conditional_layers {
             compatible = "zmk,conditional-layers";
@@ -60,31 +38,7 @@
             };
         };  
 
-        behaviors {
-                mmv2: normal_mouse_move {
-			compatible = "zmk,behavior-input-two-axis";
-			#binding-cells = <1>;
-			x-input-code = <INPUT_REL_X>;
-			y-input-code = <INPUT_REL_Y>;
-			time-to-max-speed-ms = <200>;
-			acceleration-exponent = <1>;
-		};
-
-		mmv2_input_listener {
-			compatible = "zmk,input-listener";
-			scale-multiplier = <10>;
-			device = <&mmv2>;
-		};
-                
-                pht: positional_hold_tap {
-                        compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <2>;
-                        flavor = "hold-preferred";
-                        tapping-term-ms = <220>;
-                        quick-tap-ms =  <150>;
-                        bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <1>;
-                };     
+        behaviors {    
                 ht: hold_tap {
                         label = "hold_tap";
                         compatible = "zmk,behavior-hold-tap";
@@ -96,24 +50,22 @@
                         bindings = <&kp>, <&kp>;
                 };
                 
-                mdel: mod_del {
+                backspacenter: mod_del {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&gresc>, <&kp RET>;
-                        mods = <(MOD_LALT)>;
+                        bindings = <&kp BSPC>, <&kp RET>;p
+                        mods = <(MOD_LALT|MOD_RALT)>;
+                        keep-mods = <(MOD_RALT)>;
                 };
-                gresc: grave_escape {
+                spacedelete: grave_escape {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp BSPC>, <&kp DEL>;
-                        mods = <(MOD_LALT|MOD_RCTL)>;
+                        bindings = <&kp SPACE>, <&kp DEL>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
+                        keep-mods = <(MOD_RALT)>;
                 };
         };
         
-        
-
-
-
        combos {
             compatible = "zmk,combos";
                 combo_exit_game_layer {
@@ -128,9 +80,14 @@
                         key-positions = <17 38>;
                         bindings = <&mo NUMB>;
                 };
-        };
-        
 
+                shift_combo {
+                        timeout-ms = <50>;
+                        slow-release;
+                        key-positions = <38 39>;
+                        bindings = <&sk LSHFT>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
