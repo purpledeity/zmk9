@@ -94,10 +94,10 @@
                          bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮       ╭──────────┬──────────┬──────────┬──────────┬──────────╮
                 // |          |          |          |          |          |       |          |          |          |          |          |
-                     &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans
+                     &kp Q      &kp W      &kp D      &kp F      &kp FSLH           &kp J      &kp U      &kp K      &kp Y      &kp SEMI
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 // |          |          |          |          |          |       |          |          |          |          |          |
-                     &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans
+                     HRML(A,    S,         E,         T)         &kp L              &kp H    HRMR(N,      R,         I,         O)   
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 // |          |          |          |          |          |       |          |          |          |          |          |
                      &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans 
