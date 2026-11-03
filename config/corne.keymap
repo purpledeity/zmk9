@@ -30,14 +30,14 @@
 };   
 
 / {
-        conditional_layers {
+        conditional_layers { // This is a feature that allows you to make layers active as long as you hold them
             compatible = "zmk,conditional-layers";
             tri_layer {
                 if-layers = <LOWER RAISE>;
                 then-layer = <TRI>;
             };
         };  
-       combos {
+       combos {// This allows key combinations perform other functions
             compatible = "zmk,combos";
                 combo_exit_game_layer {
                          timeout-ms = <50>;
@@ -59,6 +59,35 @@
                         bindings = <&sk LSHFT>;
                 };
         };
+
+        behaviors {    
+                ht: hold_tap {
+                        label = "hold_tap";
+                        compatible = "zmk,behavior-hold-tap";
+                        #binding-cells = <2>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <220>;
+                        quick-tap-ms = <150>;
+                        global-quick-tap;
+                        bindings = <&kp>, <&kp>;
+                };
+                
+                backspacenter: mod_del {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp BSPC>, <&kp RET>;p
+                        mods = <(MOD_LALT|MOD_RALT)>;
+                        keep-mods = <(MOD_RALT)>;
+                };
+                spacedelete: grave_escape {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp SPACE>, <&kp DEL>;
+                        mods = <(MOD_LALT|MOD_RALT)>;
+                        keep-mods = <(MOD_RALT)>;
+                };
+        };
+        
         keymap {
                 compatible = "zmk,keymap";
 
