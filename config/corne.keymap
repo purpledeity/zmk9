@@ -75,7 +75,7 @@
                 backspacenter: mod_del {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp BSPC>, <&kp RET>;p
+                        bindings = <&kp BSPC>, <&kp RET>;
                         mods = <(MOD_LALT|MOD_RALT)>;
                         keep-mods = <(MOD_RALT)>;
                 };
