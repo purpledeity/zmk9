@@ -30,6 +30,13 @@
 };   
 
 / {
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
+            tri_layer {
+                if-layers = <LOWER RAISE>;
+                then-layer = <TRI>;
+            };
+        };  
        combos {
             compatible = "zmk,combos";
                 combo_exit_game_layer {
