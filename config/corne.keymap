@@ -2,14 +2,7 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- *
- Some things that could cause an error 
- 1. Improper syntax
- 2. Missing attributes within a matrix or list 
- 3. Information listed after a ; in behaviors, combos, and keys 
- 4. Malformed logic
- 5. Un closed <>, {}, () 
- /
+ */
 #include <behaviors.dtsi> // I don't know what this does
 #include <dt-bindings/zmk/keys.h> // This extends the options for the keymap bindings
 #include <dt-bindings/zmk/outputs.h> //This allows you to toggle between Bluetooth and USB
