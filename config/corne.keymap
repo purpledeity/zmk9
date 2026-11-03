@@ -96,25 +96,21 @@
         };
         
         keymap {
-                compatible = "zmk,keymap"; // Set layout
+                compatible = "zmk,keymap";
+
                 default_layer {
-                         bindings = <
-                // ╭──────────┬──────────┬──────────┬──────────┬──────────╮       ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-                // |  Q       |  W       |  D       |  F       |  /       |       |  J       |  U       |  K       |  Y       |  :       |
-                     &kp Q      &kp W      &kp D      &kp F      &kp FSLH           &kp J      &kp U      &kp K      &kp Y      &kp SEMI
-                // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                // |  A       |  S       |  E       |  T       |  L       |       |  H       |  N       |  R       |  I       |  O       |
-                     HRML(A,      S,         E,         T)         &kp L              &kp H    HRMR(N,      R,         I,         O)    
-                // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
-                // |  G       |  X       |  C       |  V       |  Z       |       |  B       |  M       |  p       |  ,       |  .       |
-                    &kp G      &kp X      &kp C      &kp V      &kp Z               &kp B      &kp M      &kp P      &kp COMMA  &kp DOT 
-                // ╰──────────┴──────────┼──────────┼──────────┼──────────┤       ├──────────┴──────────┴──────────┼──────────┴──────────╯
-                //                       |  Mouse   |  LWR     |  SPC     |       |  ENT     |  RSE     |          |
-                                           &mo 7      &mo 1    &spacedelete       &backspacenter &mo 2    &kp LSHIFT
-                //                       ╰──────────┴──────────┴──────────╯       ╰──────────┴──────────┴──────────╯
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-                
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
