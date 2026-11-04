@@ -32,6 +32,9 @@
 };   
 
 / {
+        chosen {
+        zmk,matrix-transform = &five_column_transform;
+        };
         conditional_layers { // This is a feature that allows you to make layers active as long as you hold them
             compatible = "zmk,conditional-layers";
             tri_layer {
