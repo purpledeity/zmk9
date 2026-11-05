@@ -43,13 +43,13 @@
                         timeout-ms = <50>;
                         key-positions = <30 31>;
                         bindings = <&sk Lshift>;
-                        layers = < 0 1 >
+                        layers = < 0 1 >;
                 };
                 Combo_Rshift {
                         timeout-ms = <50>;
                         key-positions = <34 35>;
                         bindings = <&sk Rshift>;
-                        layers = < 0 1 >
+                        layers = < 0 1 >;
                 };
 
         };
