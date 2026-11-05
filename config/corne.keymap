@@ -39,16 +39,10 @@
         };  
        combos {// This allows key combinations perform other functions
             compatible = "zmk,combos";
-                Combo_Lshift {
+                Combo_shift {
                         timeout-ms = <50>;
-                        key-positions = <30 31>;
+                        key-positions = <32 33>;
                         bindings = <&sk LSHFT>;
-                        layers = < 0 1 >;
-                };
-                Combo_Rshift {
-                        timeout-ms = <50>;
-                        key-positions = <34 35>;
-                        bindings = <&sk RSHFT>;
                         layers = < 0 1 >;
                 };
 
