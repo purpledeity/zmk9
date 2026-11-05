@@ -129,7 +129,7 @@
                 &sk LC(LSHFT)   &kp TAB    &kp HOME   &kp PG_UP  &kp PSCRN          &kp TAB    &kp LEFT   &kp RIGHT  &kp DOWN   &kp UP  
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
                 // |          |  ESC     |  END     |  PGDN    |  SLCK    |       |  ESC     |          |          |PAGE DOWN | PAGE UP  |
-                     &none      &kp ESC    &kp END    &kp PG_DN  &kp SLCK           &ESC       &none      &none      &kp PG_DN  &kp PG_UP  
+                     &none      &kp ESC    &kp END    &kp PG_DN  &kp SLCK           &kp ESC    &none      &none    &kp PG_DN   &kp PG_UP  
                 // ╰──────────┴──────────┼──────────┼──────────┼──────────┤       ├──────────┴──────────┴──────────┼──────────┴──────────╯
                 //                       |          |          |          |       |          |          |          |
                                             &trans     &trans     &trans            &trans     &trans     &trans
