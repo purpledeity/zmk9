@@ -77,6 +77,10 @@
                         bindings = <&kp>, <&kp>;
                         hold-trigger-on-release;// <----- This is the change I just made check it fucker
                 };
+                zip_xy_scaler: zip_xy_scaler {
+                        compatible = "zmk,behavior-input-scaler";
+                        #binding-cells = <2>;// You can define default scaling factors here if needed
+                };
                 
                 backspacenter: mod_del {
                         compatible = "zmk,behavior-mod-morph";
