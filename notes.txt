@@ -19,10 +19,10 @@
 //Empty layout
 // ╭──────────┬──────────┬──────────┬──────────┬──────────╮       ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 // |          |          |          |          |          |       |          |          |          |          |          |
-     &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trnans
+     &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // |          |          |          |          |          |       |          |          |          |          |          |
-     &trans     &trans     &trans     &trans     &trnans            &trans     &trans     &trans     &trans     &trans 
+     &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans 
 // ├──────────┼──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┼──────────┤
 // |          |          |          |          |          |       |          |          |          |          |          |
      &trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans 
