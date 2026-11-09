@@ -62,6 +62,7 @@
                         key-positions = <32 33>;
                         bindings = <&sk LSHFT>;
                         layers = < 0 1 >;
+                        slow-release;
                 };
 
         };
@@ -82,15 +83,15 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp BSPC>, <&kp RET>;
-                        mods = <(MOD_LCRTL|MOD_RCRTL)>;
+                        mods = <(MOD_LCTRL|MOD_RCRTL)>;
                         keep-mods = <(MOD_RCTRL)>;
                 };
                 spacedelete: grave_escape {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp SPACE>, <&kp DEL>;
-                        mods = <(MOD_LCTRL|MOD_RCTRl)>;
-                        keep-mods = <(MOD_RCTRL)>;
+                        mods = <(MOD_LCTRL|MOD_RCRTL)>;
+                        keep-mods = <(MOD_RCRTL)>;
                 };
 
         };
