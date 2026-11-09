@@ -82,15 +82,15 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp BSPC>, <&kp RET>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
-                        keep-mods = <(MOD_RALT)>;
+                        mods = <(MOD_LCRTL|MOD_RCRTL)>;
+                        keep-mods = <(MOD_RCTRL)>;
                 };
                 spacedelete: grave_escape {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp SPACE>, <&kp DEL>;
-                        mods = <(MOD_LALT|MOD_RALT)>;
-                        keep-mods = <(MOD_RALT)>;
+                        mods = <(MOD_LCTRL|MOD_RCTrl)>;
+                        keep-mods = <(MOD_RCTRL)>;
                 };
 
         };
