@@ -89,7 +89,7 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp SPACE>, <&kp DEL>;
-                        mods = <(MOD_LCTRL|MOD_RCTrl)>;
+                        mods = <(MOD_LCTRL|MOD_RCTRl)>;
                         keep-mods = <(MOD_RCTRL)>;
                 };
 
