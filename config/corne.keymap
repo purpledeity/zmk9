@@ -79,18 +79,18 @@
                         hold-trigger-on-release;// <----- This is the change I just made check it fucker
                 };
                 
-                backspacenter: mod_del {
+                backspacenter: backspacenter {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp BSPC>, <&kp RET>;
-                        mods = <(MOD_LCTRL|MOD_RCTRL)>;
+                        mods = <(MOD_LCTRL | MOD_RCTRL)>;
                         keep-mods = <(MOD_RCTRL)>;
                 };
-                spacedelete: grave_escape {
+                spacedelete: spacedelete {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp SPACE>, <&kp DEL>;
-                        mods = <(MOD_LCTRL|MOD_RCTRL)>;
+                        mods = <(MOD_LCTRL | MOD_RCTRL)>;
                         keep-mods = <(MOD_LCTRL)>;
                 };
 
