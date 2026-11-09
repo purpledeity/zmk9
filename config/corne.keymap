@@ -178,8 +178,8 @@
                 // |          |          |          |          |Scrl Right|       |Scrl Down | Mouse 1  | Mouse 2  |          |          |
                      &trans     &trans     &trans     &trans     &msc SCRL_RIGHT  &msc SCRL_DOWN &mkp MB4 &mkp MB5   &trans     &trans 
                 // ╰──────────┴──────────┼──────────┼──────────┼──────────┤       ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                //                       |          |Left Clk  |Right Clk |       |  Base    |          |          |
-                                           &trans   &mkp LCLK  &mkp RCLK            &mo 0      &trans     &trans 
+                //                       |          |          |  base    |       |Left Clk  |Right Clk |          |
+                                           &trans     &trans     &mo 1            &mkp LCLK  &mkp RCLK     &trans 
                 //                       ╰──────────┴──────────┴──────────╯       ╰──────────┴──────────┴──────────╯
                         >;
                 };
