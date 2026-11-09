@@ -75,7 +75,7 @@
                         quick-tap-ms = <150>;
                         global-quick-tap;
                         bindings = <&kp>, <&kp>;
-                        hold-trigger-on-release;// <----- This is the change I just made check it fucker
+                        hold-while-undecided;
                 };
                 
                 backspacenter: mod_del {
