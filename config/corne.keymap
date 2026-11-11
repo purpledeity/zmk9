@@ -75,7 +75,6 @@
                         quick-tap-ms = <150>;
                         global-quick-tap;
                         bindings = <&kp>, <&kp>;
-                        hold-while-undecided;
                 };
                 
                 backspacenter: mod_del {
@@ -83,7 +82,7 @@
                         #binding-cells = <0>;
                         bindings = <&kp BSPC>, <&kp RET>;
                         mods = <(MOD_LALT|MOD_RALT)>;
-                        keep-mods = <(MOD_RALT)>;
+                        keep-mods = <(MOD_LALT)>;
                 };
                 spacedelete: grave_escape {
                         compatible = "zmk,behavior-mod-morph";
